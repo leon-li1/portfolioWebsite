@@ -1,3 +1,7 @@
+import styled from "styled-components";
+
 export const Hero = () => {
-  return <h1>LEON</h1>;
+  return <HeroContainer>LEON</HeroContainer>;
 };
+
+const HeroContainer = styled.div``;

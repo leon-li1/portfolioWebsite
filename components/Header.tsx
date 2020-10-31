@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
-import styled from 'styled-components';
-import { COLORS } from '../utils/colors';
+import styled from "styled-components";
+import { COLORS } from "../utils/colors";
 
 export const Header = () => {
   const [showMenu, setMenu] = useState(false);
@@ -14,23 +14,44 @@ export const Header = () => {
           <li>
             <strong>About Me</strong>
             <ul>
-              <Link href="/resume.pdf"><li>Resume</li></Link>
-              <Link href="https://github.com/leon-li1"><a><li>Github</li></a></Link>
-              <Link href="https://www.linkedin.com/in/leon-li1/"><a><li>Linkedin</li></a></Link>
+              <Link href="/leonli-resume.pdf">
+                <a>
+                  <li>Resume</li>
+                </a>
+              </Link>
+              <Link href="https://github.com/leon-li1">
+                <a>
+                  <li>Github</li>
+                </a>
+              </Link>
+              <Link href="https://www.linkedin.com/in/leon-li1/">
+                <a>
+                  <li>Linkedin</li>
+                </a>
+              </Link>
             </ul>
           </li>
           <li>
-          <strong>Projects</strong>
+            <strong>Projects</strong>
             <ul>
-              <a href="#urban-lyrics"><li>Urban Lyrics<NewBadge /></li></a>
-              <a href="#data-rush"><li>Data Rush</li></a>
-              <a href="#frogger"><li>Frogger</li></a>
+              <a href="#urban-lyrics">
+                <li>
+                  Urban Lyrics
+                  <NewBadge />
+                </li>
+              </a>
+              <a href="#data-rush">
+                <li>Data Rush</li>
+              </a>
+              <a href="#frogger">
+                <li>Frogger</li>
+              </a>
             </ul>
           </li>
         </ul>
       </MenuContainer>
-      <SandwichIcon onClick={toggleMenu} src="/sandwich-menu.svg"/>
-      <img height="45%" src="/site-logo.svg"/>
+      <SandwichIcon onClick={toggleMenu} src="/sandwich-menu.svg" />
+      <img height="45%" src="/site-logo.svg" />
     </HeaderBackground>
   );
 };
@@ -59,7 +80,7 @@ type MenuContainerProps = {
 const MenuContainer = styled.div<MenuContainerProps>`
   position: fixed;
   top: 60px;
-  left: ${({ showMenu }) => showMenu ? '0px' : '-300px'};
+  left: ${({ showMenu }) => (showMenu ? "0px" : "-300px")};
   background-color: ${COLORS.darkBlue};
   width: 300px;
   transition: left 0.5s ease-in-out;
@@ -76,9 +97,11 @@ const MenuContainer = styled.div<MenuContainerProps>`
 `;
 
 const NewBadge = () => {
-  return <NewBadgeContainer>
-    <strong>New!</strong>
-  </NewBadgeContainer>
+  return (
+    <NewBadgeContainer>
+      <strong>New!</strong>
+    </NewBadgeContainer>
+  );
 };
 
 const NewBadgeContainer = styled.div`
