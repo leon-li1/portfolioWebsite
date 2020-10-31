@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useState } from "react";
 import styled from "styled-components";
 import { COLORS } from "../utils/colors";
@@ -14,21 +13,15 @@ export const Header = () => {
           <li>
             <strong>About Me</strong>
             <ul>
-              <Link href="/leonli-resume.pdf">
-                <a>
+                <a target="_blank" href="/leonli-resume.pdf">
                   <li>Resume</li>
                 </a>
-              </Link>
-              <Link href="https://github.com/leon-li1">
-                <a>
+                <a target="_blank" href="https://github.com/leon-li1">
                   <li>Github</li>
                 </a>
-              </Link>
-              <Link href="https://www.linkedin.com/in/leon-li1/">
-                <a>
+                <a target="_blank" href="https://www.linkedin.com/in/leon-li1/">
                   <li>Linkedin</li>
                 </a>
-              </Link>
             </ul>
           </li>
           <li>
