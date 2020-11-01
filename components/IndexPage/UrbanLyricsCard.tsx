@@ -3,7 +3,7 @@ import { COLORS, SMALL } from '../../utils/constants';
 import { Card } from '../Card';
 
 export const UrbanLyricsCard = () => (
-  <Card backgroundColor={COLORS.blue} offset={{x: 120, y: 10}}>
+  <Card backgroundColor={COLORS.blue} offset={{x: 120, y: 10}} id='urban-lyrics'>
     <h2>Check out my latest project, Urban Lyrics!</h2>
     <HorziontalContainer>
       <Img />

@@ -10,7 +10,7 @@ export const Bio = () => (
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut magna aliqua. Lorem ipsum amet, consectetur adipiscing elit
       </p>
       <br/>
-      <p>You can reach me at: leon.li1@uwaterloo.ca</p>
+      <p>You can reach me at: <a href="mailto:leon.li1@uwaterloo.ca">leon.li1@uwaterloo.ca</a></p>
     </TextContainer>
   </Container>
 );

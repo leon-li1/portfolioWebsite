@@ -3,7 +3,7 @@ import { COLORS, SMALL } from '../../utils/constants';
 import { Card } from '../Card';
 
 export const DataRushCard = () => (
-  <Card backgroundColor={COLORS.turquoise} offset={{x: -120, y: -4}}>
+  <Card backgroundColor={COLORS.turquoise} offset={{x: -120, y: -4}} id="data-rush" >
     <Container>
     <Heading>Data Rush</Heading>
     <HorziontalContainer>

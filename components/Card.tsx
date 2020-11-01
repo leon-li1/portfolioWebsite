@@ -7,10 +7,11 @@ type CardProps = {
   children: ReactNode;
   offset: { x: number, y: number };
   widthOffset?: number;
+  id?: string;
 };
 
-export const Card: FC<CardProps> = ({ backgroundColor, offset, children, widthOffset = 0 }) => (
-  <Container backgroundColor={backgroundColor} offset={offset} widthOffset={widthOffset}>
+export const Card: FC<CardProps> = ({ backgroundColor, offset, children, widthOffset = 0, id = "" }) => (
+  <Container backgroundColor={backgroundColor} offset={offset} widthOffset={widthOffset} id={id}>
     <ThreeDotSvg />
     {children}
   </Container>
