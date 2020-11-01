@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { COLORS } from "../utils/colors";
+import { COLORS } from "../utils/constants";
 
 export const Header = () => {
   const [showMenu, setMenu] = useState(false);
@@ -52,6 +52,7 @@ export const Header = () => {
 const SandwichIcon = styled.img`
   height: 30%;
   cursor: pointer;
+  z-index: 2;
 `;
 
 const HeaderBackground = styled.div`
@@ -62,7 +63,8 @@ const HeaderBackground = styled.div`
   padding: 0 15px;
   position: fixed;
   height: 60px;
-  width: 100vw;
+  width: 100%;
+  z-index: 1;
   background-color: ${COLORS.black}80;
 `;
 
@@ -72,20 +74,21 @@ type MenuContainerProps = {
 
 const MenuContainer = styled.div<MenuContainerProps>`
   position: fixed;
-  top: 60px;
-  left: ${({ showMenu }) => (showMenu ? "0px" : "-300px")};
+  top: 0px;
+  padding-top: 60px;
+  left: ${({ showMenu }) => (showMenu ? "0px" : "-10em")};
+  width: 10em;
   background-color: ${COLORS.darkBlue};
-  width: 300px;
   transition: left 0.5s ease-in-out;
-  color: white;
   font-size: 1.2em;
   li {
     list-style-type: none;
+    font-size: 0.8em;
     padding: 0.4em 0;
   }
   a {
     text-decoration: none;
-    color: white;
+    color: ${COLORS.white}
   }
 `;
 
@@ -99,7 +102,7 @@ const NewBadge = () => {
 
 const NewBadgeContainer = styled.div`
   display: inline-block;
-  background-color: white;
+  background-color: ${COLORS.white};
   border-radius: 12px;
   vertical-align: top;
   font-size: 0.3em;

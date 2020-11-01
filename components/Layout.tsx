@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import { Header } from "./Header";
+import styled from "styled-components";
 
 type Props = {
   children?: ReactNode;
@@ -8,7 +9,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = "This is the default title" }: Props) => (
-  <div>
+  <Container>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
@@ -16,11 +17,11 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
     </Head>
     <Header />
     {children}
-    <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
-    </footer>
-  </div>
+  </Container>
 );
+
+const Container = styled.div`
+  position: relative;
+`;
 
 export default Layout;

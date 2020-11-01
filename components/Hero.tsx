@@ -20,7 +20,7 @@ export const Hero = () => {
 };
 
 const HeroContainer = styled.div`
-  padding: 20vh 0;
+  padding: 25vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +35,6 @@ const IconContainer = styled.div`
 `;
 
 const SVGIcon = styled.img`
-  margin: 0 20px;
-  height: 40px;
+  margin: 5px 20px;
+  height: 1.5em;
 `;
