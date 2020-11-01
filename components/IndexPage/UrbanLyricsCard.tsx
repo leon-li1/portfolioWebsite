@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { COLORS } from '../../utils/constants';
+import { COLORS, SMALL } from '../../utils/constants';
 import { Card } from '../Card';
 
 export const UrbanLyricsCard = () => (
@@ -50,11 +50,17 @@ const Img = styled.img.attrs({
   src: "/urban-lyrics.png"
 })`
   width: 50%;
+  @media (max-width: ${SMALL}) {
+    width: 100%;
+  }
 `;
 
 const HorziontalContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: ${SMALL}) {
+    flex-direction: column;
+  }
 `;
 
 const RHS = styled.div`

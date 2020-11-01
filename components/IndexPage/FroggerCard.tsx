@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { COLORS } from '../../utils/constants';
+import { COLORS, SMALL } from '../../utils/constants';
 import { Card } from '../Card';
 
 export const FroggerCard = () => (
@@ -37,11 +37,18 @@ const Img = styled.img.attrs({
   max-height: 15em;
   border-radius: 20px;
   margin-right: 15px;
+  @media (max-width: ${SMALL}) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 `;
 
 const HorziontalContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: ${SMALL}) {
+    flex-direction: column;
+  }
 `;
 
 const RHS = styled.div`

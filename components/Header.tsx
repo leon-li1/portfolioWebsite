@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { COLORS } from "../utils/constants";
+import { COLORS, SMALL } from "../utils/constants";
 
 export const Header = () => {
   const [showMenu, setMenu] = useState(false);
@@ -75,7 +75,7 @@ type MenuContainerProps = {
 const MenuContainer = styled.div<MenuContainerProps>`
   position: fixed;
   top: 0px;
-  padding-top: 60px;
+  padding-top: 30px;
   left: ${({ showMenu }) => (showMenu ? "0px" : "-10em")};
   width: 10em;
   background-color: ${COLORS.darkBlue};
@@ -89,6 +89,10 @@ const MenuContainer = styled.div<MenuContainerProps>`
   a {
     text-decoration: none;
     color: ${COLORS.white}
+  }
+  @media (max-width: ${SMALL}) {
+    width: 100%;
+    left: ${({ showMenu }) => (showMenu ? "0px" : "-100%")};
   }
 `;
 

@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react";
 import styled from "styled-components";
+import { SMALL } from "../utils/constants";
 
 type CardProps = {
   backgroundColor: string;
@@ -26,8 +27,13 @@ const Container = styled.div<ContainerProps>`
   transform: translate(${p => p.offset.x}px, ${p => p.offset.y}px);
   border-radius: 23px;
   padding: 20px;
-  margin: 50px -${p => p.widthOffset/2}px;
+  margin: 50px -${p => p.widthOffset / 2}px; /* why is it negative*/
   font-size: 0.8em;
+  @media (max-width: ${SMALL}) {
+    margin: 0;
+    transform: none;
+    margin-bottom: 20px;
+  }
 `;
 
 const ThreeDotSvg = styled.img.attrs({

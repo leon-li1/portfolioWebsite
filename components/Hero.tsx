@@ -25,6 +25,7 @@ const HeroContainer = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: 1.3em;
+  text-align: center;
 `;
 
 const IconContainer = styled.div`

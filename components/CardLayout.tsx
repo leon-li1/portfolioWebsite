@@ -1,6 +1,6 @@
 import React, { FC, ReactNode, useRef, useState } from "react";
 import styled from "styled-components";
-import { COLORS } from "../utils/constants";
+import { COLORS, SMALL } from "../utils/constants";
 import { usePageResize } from "../utils/usePageResize";
 import { Bio } from "./Bio";
 
@@ -49,19 +49,34 @@ const ContainerForTheContainer = styled.div`
   justify-content: center;
 `;
 
+const margin = 100;
+const maxwidth = 1200;
+const padding = 50;
+const mobilePadding = 20;
+
 const Container = styled.div`
   background-color: ${COLORS.darkBlue};
   border-radius: 38px;
-  margin: 0 100px;
-  max-width: 1200px;
-  padding: 50px;
+  margin: 0 ${margin}px;
+  max-width: ${maxwidth}px;
+  padding: ${padding}px;
   overflow: hidden;
+  @media (max-width: ${SMALL}) {
+    margin: 0;
+    padding: ${mobilePadding}px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 `;
 
 const FloatingContainer = styled.div`
   position: absolute;
-  width: calc(100% - 200px - 100px);
-  max-width: calc(1200px - 100px);
+  width: calc(100% - ${margin*2}px - ${padding*2}px);
+  max-width: calc(${maxwidth}px - ${padding*2}px);
+  @media (max-width: ${SMALL}) {
+    width: calc(100% - ${mobilePadding*2}px);
+    padding-bottom: 20px;
+  }
 `;
 
 const FooterContainer = styled.footer`
@@ -70,9 +85,15 @@ const FooterContainer = styled.footer`
   justify-content: center;
   align-items: center;
   height: 100px;
-  margin: 20px -50px -50px -50px;
+  margin: 20px -${padding}px -${padding}px -${padding}px;
   z-index: 2;
+  @media (max-width: ${SMALL}) {
+    margin: 0px -${mobilePadding}px -${mobilePadding}px -${mobilePadding}px;
+  }
   * {
     margin: 0 10px;
+    @media (max-width: ${SMALL}) {
+      margin: 0 2px;
+    }
   }
 `;
