@@ -20,11 +20,11 @@ export const Hero = () => {
 };
 
 const HeroContainer = styled.div`
-  padding: 32vh 0;
+  padding: 45vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-align: center;
 `;
 
