@@ -7,16 +7,20 @@ export const Bio = () => (
     <TextContainer>
       <h4>I'm a third year Computer Science student at Waterloo.</h4>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut magna aliqua. Lorem ipsum amet, consectetur adipiscing elit
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut magna aliqua. Lorem ipsum amet, consectetur
+        adipiscing elit
       </p>
-      <br/>
-      <p>You can reach me at: <a href="mailto:leon.li1@uwaterloo.ca">leon.li1@uwaterloo.ca</a></p>
+      <br />
+      <p>
+        You can reach me at: <a href="mailto:mail@leonli.cc">mail@leonli.cc</a>
+      </p>
     </TextContainer>
   </Container>
 );
 
 const ProfileImg = styled.img.attrs({
-  src: 'me.jpg'
+  src: "me.jpg",
 })`
   border-radius: 50%;
   height: 150px;
@@ -24,7 +28,7 @@ const ProfileImg = styled.img.attrs({
 `;
 
 const TextContainer = styled.div`
-  margin-left: 20px; 
+  margin-left: 20px;
 `;
 
 const Container = styled.div`
@@ -35,4 +39,3 @@ const Container = styled.div`
     margin-bottom: 20px;
   }
 `;
-

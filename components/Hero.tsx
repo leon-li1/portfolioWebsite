@@ -5,13 +5,13 @@ export const Hero = () => {
     <HeroContainer>
       <h1>👋 Hey, I'm Leon!</h1>
       <IconContainer>
-        <a href="/leonli-resume.pdf">
+        <a href="/leonli-resume.pdf" target="_blank">
           <SVGIcon src="./file-text.svg" />
         </a>
-        <a target="_blank" href="https://github.com/leon-li1">
+        <a href="https://github.com/leon-li1" target="_blank">
           <SVGIcon src="./github.svg" />
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/leon-li1/">
+        <a href="https://www.linkedin.com/in/leon-li1/" target="_blank">
           <SVGIcon src="./linkedin.svg" />
         </a>
       </IconContainer>

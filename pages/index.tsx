@@ -2,10 +2,8 @@ import Layout from "../components/Layout";
 import { Hero } from "../components/Hero";
 import styled from "styled-components";
 import { CardLayout } from "../components/CardLayout";
-import { COLORS } from "../utils/constants";
-import { Card } from '../components/Card';
 import React from "react";
-import { LanguageCard } from '../components/IndexPage/LanguageCard';
+import { LanguageCard } from "../components/IndexPage/LanguageCard";
 import { UrbanLyricsCard } from "../components/IndexPage/UrbanLyricsCard";
 import { DataRushCard } from "../components/IndexPage/DataRushCard";
 import { FroggerCard } from "../components/IndexPage/FroggerCard";
@@ -33,7 +31,7 @@ const IndexPage = () => (
 );
 
 const TopWaveSVG = styled.img.attrs({
-  src: "/top-page-wave.svg"
+  src: "/top-page-wave.svg",
 })`
   width: 100%;
   position: absolute;
@@ -43,7 +41,7 @@ const TopWaveSVG = styled.img.attrs({
 `;
 
 const BottomWaveSVG = styled.img.attrs({
-  src: "/bottom-page-wave.svg"
+  src: "/bottom-page-wave.svg",
 })`
   width: 100%;
   position: absolute;
@@ -53,9 +51,9 @@ const BottomWaveSVG = styled.img.attrs({
 `;
 
 const AirplaneSVG = styled.img.attrs({
-  src: '/airplane.svg'
+  src: "/airplane.svg",
 })`
-  transform: translate(-2px,5px);
+  transform: translate(-2px, 5px);
 `;
 
 export default IndexPage;
