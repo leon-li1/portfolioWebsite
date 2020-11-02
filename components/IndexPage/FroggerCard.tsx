@@ -10,11 +10,11 @@ export const FroggerCard = () => (
       <RHS>
         <h4>Java, Java Swing</h4>
         <p>
-          One of the most popular classic arcade game of the 80’s. Frogger is a
+          One of the most popular classic arcade game of the 80’s, Frogger is a
           game in which the player guides a frog into one of the five caves. The
           frog starts at the bottom of the screen and the caves are at the top
-          of the screen so the player must navigate the frog whilee avoiding
-          obstacles which results in a loss of a life.
+          of the screen so the player must navigate the frog across the screen
+          while avoiding many different obstacles.
         </p>
         <a href="https://github.com/leon-li1/Frogger" target="_blank">
           <Icon src="/github.svg" />
