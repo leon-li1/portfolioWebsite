@@ -7,9 +7,8 @@ export const Bio = () => (
     <TextContainer>
       <h4>I'm a third year Computer Science student at Waterloo.</h4>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut magna aliqua. Lorem ipsum amet, consectetur
-        adipiscing elit
+        I like listening to music and lip syning to my favourite songs in front
+        of my bathroom mirror. I’m also an amateur 8-ball pool player.
       </p>
       <br />
       <p>
