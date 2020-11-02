@@ -3,11 +3,7 @@ import { COLORS, SMALL } from "../../utils/constants";
 import { Card } from "../Card";
 
 export const FroggerCard = () => (
-  <Card
-    backgroundColor={COLORS.mediumBlue}
-    offset={{ x: 120, y: 0 }}
-    id="frogger"
-  >
+  <Card backgroundColor={COLORS.blue} offset={{ x: 120, y: 0 }} id="frogger">
     <Heading>Frogger</Heading>
     <HorziontalContainer>
       <Img />
