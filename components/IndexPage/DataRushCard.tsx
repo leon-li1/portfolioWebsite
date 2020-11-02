@@ -15,12 +15,12 @@ export const DataRushCard = () => (
         <RHS>
           <h4>C++, X11 Graphics</h4>
           <p>
-            Similar to the 1v1 classic strategy board game Stratego, Data Rush
-            is a game played between two players AKA hackers. Each player
-            controls eight pieces called links, 4 of them represent viruses and
-            the other 4 represent pieces of data. The hackers race to either
-            download 4 peices of data or make the opposing hacker download 4
-            viruses.
+            Similar to the 1v1 classic strategy board game <i>Stratego,</i> Data
+            Rush is a game played between two players AKA hackers. Each player
+            controls eight pieces called links, four of them represent viruses
+            and the other four represent pieces of data. The hackers race to
+            either download four peices of data or make the opposing hacker
+            download four viruses.
           </p>
           <a href="https://github.com/leon-li1/dataRush" target="_blank">
             <svg
