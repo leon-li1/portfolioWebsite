@@ -29,6 +29,7 @@ const ProfileImg = styled.img.attrs({
   border-radius: 50%;
   height: 155px;
   padding-right: 10px;
+  padding-bottom: 10px;
 `;
 
 const TextContainer = styled.div`

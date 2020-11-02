@@ -3,7 +3,7 @@ import { Hero } from "../components/Hero";
 import styled from "styled-components";
 import { CardLayout } from "../components/CardLayout";
 import React from "react";
-import { LanguageCard } from "../components/IndexPage/LanguageCard";
+import { SkillsCard } from "../components/IndexPage/SkillsCard";
 import { UrbanLyricsCard } from "../components/IndexPage/UrbanLyricsCard";
 import { DataRushCard } from "../components/IndexPage/DataRushCard";
 import { FroggerCard } from "../components/IndexPage/FroggerCard";
@@ -22,7 +22,7 @@ const IndexPage = () => (
     <BottomWaveSVG />
     <Hero />
     <CardLayout footer={footerContent()}>
-      <LanguageCard />
+      <SkillsCard />
       <UrbanLyricsCard />
       <DataRushCard />
       <FroggerCard />

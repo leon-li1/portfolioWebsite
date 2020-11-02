@@ -56,8 +56,9 @@ const StackTable = styled.table`
     white-space: nowrap;
     text-transform: uppercase;
     text-align: left;
+    vertical-align: top;
     font-weight: bold;
-    padding-right: 5px;
+    padding: 5px 5px 0px 0px;
   }
 `;
 

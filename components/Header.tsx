@@ -13,15 +13,15 @@ export const Header = () => {
           <li>
             <strong>About Me</strong>
             <ul>
-                <a target="_blank" href="/leonli-resume.pdf">
-                  <li>Resume</li>
-                </a>
-                <a target="_blank" href="https://github.com/leon-li1">
-                  <li>Github</li>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/leon-li1/">
-                  <li>Linkedin</li>
-                </a>
+              <a target="_blank" href="/leonli-resume.pdf">
+                <li>Resume</li>
+              </a>
+              <a target="_blank" href="https://github.com/leon-li1">
+                <li>Github</li>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/leon-li1/">
+                <li>Linkedin</li>
+              </a>
             </ul>
           </li>
           <li>
@@ -88,7 +88,7 @@ const MenuContainer = styled.div<MenuContainerProps>`
   }
   a {
     text-decoration: none;
-    color: ${COLORS.white}
+    color: ${COLORS.white};
   }
   @media (max-width: ${SMALL}) {
     width: 100%;

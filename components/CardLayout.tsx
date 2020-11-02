@@ -10,29 +10,25 @@ type CardLayoutProps = {
 };
 
 export const CardLayout: FC<CardLayoutProps> = ({ children, footer }) => {
-  const [height, setHeight] = useState('200vh');
+  const [height, setHeight] = useState("200vh");
   const floatingDiv = useRef<HTMLDivElement>(null);
-  
+
   usePageResize(() => {
-    console.log('resize');
+    console.log("resize");
     const newHeight = floatingDiv.current?.getBoundingClientRect()?.height;
-    setHeight(newHeight ? `${newHeight}px` : '200vh');
+    setHeight(newHeight ? `${newHeight}px` : "200vh");
   });
 
   return (
     <ContainerForTheContainer>
-    <Container>
-      <main>
-        <Bio />
-        <FloatingContainer ref={floatingDiv}>
-          {children}
-        </FloatingContainer>
-        <Spacer height={height}/>
-      </main>
-      <FooterContainer>
-        {footer}
-      </FooterContainer>
-    </Container>
+      <Container>
+        <main>
+          <Bio />
+          <FloatingContainer ref={floatingDiv}>{children}</FloatingContainer>
+          <Spacer height={height} />
+        </main>
+        <FooterContainer>{footer}</FooterContainer>
+      </Container>
     </ContainerForTheContainer>
   );
 };
@@ -40,7 +36,7 @@ export const CardLayout: FC<CardLayoutProps> = ({ children, footer }) => {
 type SpacerProps = { height: string };
 
 const Spacer = styled.div<SpacerProps>`
-  height: ${p => p.height};
+  height: ${(p) => p.height};
   transition: height 0.5s ease-in-out;
 `;
 
@@ -71,10 +67,10 @@ const Container = styled.div`
 
 const FloatingContainer = styled.div`
   position: absolute;
-  width: calc(100% - ${margin*2}px - ${padding*2}px);
-  max-width: calc(${maxwidth}px - ${padding*2}px);
+  width: calc(100% - ${margin * 2}px - ${padding * 2}px);
+  max-width: calc(${maxwidth}px - ${padding * 2}px);
   @media (max-width: ${SMALL}) {
-    width: calc(100% - ${mobilePadding*2}px);
+    width: calc(100% - ${mobilePadding * 2}px);
     padding-bottom: 20px;
   }
 `;

@@ -5,13 +5,24 @@ import { SMALL } from "../utils/constants";
 type CardProps = {
   backgroundColor: string;
   children: ReactNode;
-  offset: { x: number, y: number };
+  offset: { x: number; y: number };
   widthOffset?: number;
   id?: string;
 };
 
-export const Card: FC<CardProps> = ({ backgroundColor, offset, children, widthOffset = 0, id = "" }) => (
-  <Container backgroundColor={backgroundColor} offset={offset} widthOffset={widthOffset} id={id}>
+export const Card: FC<CardProps> = ({
+  backgroundColor,
+  offset,
+  children,
+  widthOffset = 0,
+  id = "",
+}) => (
+  <Container
+    backgroundColor={backgroundColor}
+    offset={offset}
+    widthOffset={widthOffset}
+    id={id}
+  >
     <ThreeDotSvg />
     {children}
   </Container>
@@ -19,16 +30,16 @@ export const Card: FC<CardProps> = ({ backgroundColor, offset, children, widthOf
 
 type ContainerProps = {
   backgroundColor: string;
-  offset: { x: number, y: number };
+  offset: { x: number; y: number };
   widthOffset: number;
 };
 
 const Container = styled.div<ContainerProps>`
-  background-color: ${p => p.backgroundColor};
-  transform: translate(${p => p.offset.x}px, ${p => p.offset.y}px);
+  background-color: ${(p) => p.backgroundColor};
+  transform: translate(${(p) => p.offset.x}px, ${(p) => p.offset.y}px);
   border-radius: 23px;
   padding: 20px;
-  margin: 50px -${p => p.widthOffset / 2}px; /* why is it negative*/
+  margin: 50px -${(p) => p.widthOffset / 2}px; /* why is it negative*/
   font-size: 0.8em;
   @media (max-width: ${SMALL}) {
     margin: 0;
@@ -38,7 +49,7 @@ const Container = styled.div<ContainerProps>`
 `;
 
 const ThreeDotSvg = styled.img.attrs({
-  src: '/three-dot.svg',
+  src: "/three-dot.svg",
 })`
   display: block;
   height: 10px;
