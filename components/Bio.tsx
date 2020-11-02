@@ -5,17 +5,18 @@ export const Bio = () => (
   <Container>
     <ProfileImg />
     <TextContainer>
-      <h4>
+      <h3>
         I'm a third year Computer Science student at{" "}
         <a href="https://i.redd.it/zfjyptgr04651.jpg" target="_blank">
           UWaterloo
         </a>
         .
-      </h4>
+      </h3>
       <p>
-        I enjoy listening to music and lip syncing to my favourite songs in
-        front of my bathroom mirror. I’m also an amateur 8-ball pool player.{" "}
-        <br />
+        I enjoy listening to music and occasionally performing my favourite
+        songs in front of the bathroom mirror (I'm pretty shy though so you
+        would rarely catch me doing so). I’m also a mediocre at-best 8-ball pool
+        player. <br />
         You can reach me at: <a href="mailto:mail@leonli.cc">mail@leonli.cc</a>
       </p>
     </TextContainer>
@@ -32,6 +33,7 @@ const ProfileImg = styled.img.attrs({
 
 const TextContainer = styled.div`
   margin-left: 20px;
+  font-size: 0.8em;
 `;
 
 const Container = styled.div`
