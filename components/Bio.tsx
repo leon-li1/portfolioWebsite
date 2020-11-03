@@ -16,7 +16,7 @@ export const Bio = () => (
         I enjoy listening to music and occasionally performing my favourite
         songs in front of the bathroom mirror (I'm pretty shy though so you
         would rarely catch me doing so). I’m also a mediocre at best 8-ball pool
-        player. <br />
+        player. Thanks for visiting my website! <br />
         You can reach me at <a href="mailto:mail@leonli.cc">mail@leonli.cc</a>
       </p>
     </TextContainer>
