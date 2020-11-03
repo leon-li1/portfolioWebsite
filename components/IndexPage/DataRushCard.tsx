@@ -19,7 +19,7 @@ export const DataRushCard = () => (
             Rush is a game played between two players AKA hackers. Each player
             controls eight pieces called links, four of them represent viruses
             and the other four represent pieces of data. The hackers race to
-            either download four peices of data or make the opposing hacker
+            either download four pieces of data or make the opposing hacker
             download four viruses.
           </p>
           <a href="https://github.com/leon-li1/dataRush" target="_blank">
