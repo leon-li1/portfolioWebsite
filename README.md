@@ -1,3 +1,7 @@
+# My Portfolio Website
+
+Built with: Typescript, React, Styled Components
+
 # TypeScript Next.js example
 
 This is a really simple project that shows the usage of Next.js with TypeScript.
