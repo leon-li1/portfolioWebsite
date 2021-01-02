@@ -13,7 +13,7 @@ export const Header = () => {
           <li>
             <strong>About Me</strong>
             <ul>
-              <a target="_blank" href="/LeonLiResume.pdf.pdf">
+              <a target="_blank" href="/LeonLiResume.pdf">
                 <li>Resume</li>
               </a>
               <a target="_blank" href="https://github.com/leon-li1">

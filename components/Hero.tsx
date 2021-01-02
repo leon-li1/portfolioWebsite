@@ -5,7 +5,7 @@ export const Hero = () => {
     <HeroContainer>
       <h1>👋 Hey, I'm Leon!</h1>
       <IconContainer>
-        <a href="/leonli-resume.pdf" target="_blank">
+        <a href="/LeonLiResume.pdf" target="_blank">
           <SVGIcon src="./file-text.svg" />
         </a>
         <a href="https://github.com/leon-li1" target="_blank">
