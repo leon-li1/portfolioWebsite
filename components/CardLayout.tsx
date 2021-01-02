@@ -81,7 +81,7 @@ const FooterContainer = styled.footer`
   justify-content: center;
   align-items: center;
   height: 100px;
-  margin: 20px -${padding}px -${padding}px -${padding}px;
+  margin: 50px -${padding}px -${padding}px -${padding}px;
   z-index: 2;
   @media (max-width: ${SMALL}) {
     margin: 0px -${mobilePadding}px -${mobilePadding}px -${mobilePadding}px;

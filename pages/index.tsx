@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { CardLayout } from "../components/CardLayout";
 import React from "react";
 import { SkillsCard } from "../components/IndexPage/SkillsCard";
+import { FlexlogCard } from "../components/IndexPage/FlexlogCard";
 import { UrbanLyricsCard } from "../components/IndexPage/UrbanLyricsCard";
 import { DataRushCard } from "../components/IndexPage/DataRushCard";
 import { FroggerCard } from "../components/IndexPage/FroggerCard";
@@ -23,6 +24,7 @@ const IndexPage = () => (
     <Hero />
     <CardLayout footer={footerContent()}>
       <SkillsCard />
+      <FlexlogCard />
       <UrbanLyricsCard />
       <DataRushCard />
       <FroggerCard />

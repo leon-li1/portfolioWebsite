@@ -39,7 +39,7 @@ const Container = styled.div<ContainerProps>`
   transform: translate(${(p) => p.offset.x}px, ${(p) => p.offset.y}px);
   border-radius: 23px;
   padding: 20px;
-  margin: 50px -${(p) => p.widthOffset / 2}px; /* why is it negative*/
+  margin: 50px -${(p) => p.widthOffset / 2}px;
   font-size: 0.8em;
   @media (max-width: ${SMALL}) {
     margin: 0;

@@ -27,11 +27,14 @@ export const Header = () => {
           <li>
             <strong>Projects</strong>
             <ul>
-              <a href="#urban-lyrics">
+              <a href="#flexlog">
                 <li>
-                  Urban Lyrics
+                  Flexlog
                   <NewBadge />
                 </li>
+              </a>
+              <a href="#urban-lyrics">
+                <li>Urban Lyrics</li>
               </a>
               <a href="#data-rush">
                 <li>Data Rush</li>
