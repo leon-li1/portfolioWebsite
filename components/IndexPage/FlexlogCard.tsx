@@ -72,6 +72,9 @@ const RHS = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0em 1.2em;
+  @media (max-width: ${SMALL}) {
+    margin: 1.2em;
+  }
   > * {
     margin-bottom: 10px;
   }

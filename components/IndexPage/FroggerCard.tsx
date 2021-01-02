@@ -85,6 +85,9 @@ const HorziontalContainer = styled.div`
 const RHS = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
+  @media (max-width: ${SMALL}) {
+    margin: 1.2em;
+  }
   > * {
     margin-bottom: 10px;
   }
