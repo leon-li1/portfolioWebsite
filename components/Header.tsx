@@ -36,6 +36,9 @@ export const Header = () => {
               <a href="#urban-lyrics">
                 <li>Urban Lyrics</li>
               </a>
+              <a href="#gesture-recognizer">
+                <li>Gesture Recognizer</li>
+              </a>
               <a href="#data-rush">
                 <li>Data Rush</li>
               </a>

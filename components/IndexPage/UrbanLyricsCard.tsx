@@ -34,10 +34,7 @@ export const UrbanLyricsCard = () => (
             lookups. At the end of the song lyrics is also a Genius link for the
             current song displayed.
           </p>
-          {/* <a href="https://github.com/leon-li1/Urban-Lyrics" target="_blank">
-          <Icon src="/github.svg" />
-        </a> */}
-          <a href="https://github.com/leon-li1/dataRush" target="_blank">
+          <a href="https://github.com/leon-li1/Urban-Lyrics" target="_blank">
             <svg
               height="2em"
               viewBox="0 0 40 43"

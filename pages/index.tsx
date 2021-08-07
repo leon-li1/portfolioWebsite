@@ -6,6 +6,7 @@ import React from "react";
 import { SkillsCard } from "../components/IndexPage/SkillsCard";
 import { FlexlogCard } from "../components/IndexPage/FlexlogCard";
 import { UrbanLyricsCard } from "../components/IndexPage/UrbanLyricsCard";
+import { GestureRecognizerCard } from "../components/IndexPage/GestureRecognizerCard";
 import { DataRushCard } from "../components/IndexPage/DataRushCard";
 import { FroggerCard } from "../components/IndexPage/FroggerCard";
 
@@ -20,15 +21,16 @@ const footerContent = () => (
 const IndexPage = () => (
   <Layout title="Leon Li ~ SWE Portfolio">
     <TopWaveSVG />
-    <BottomWaveSVG />
     <Hero />
     <CardLayout footer={footerContent()}>
       <SkillsCard />
       <FlexlogCard />
       <UrbanLyricsCard />
+      <GestureRecognizerCard />
       <DataRushCard />
       <FroggerCard />
     </CardLayout>
+    <BottomWaveSVG />
   </Layout>
 );
 

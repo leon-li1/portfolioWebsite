@@ -11,15 +11,14 @@ export const SkillsCard = () => (
           <td>
             <strong>Languages</strong>
           </td>
-          <td>C++ • JavaScript • Java • Python • Scala • SQL • HTML • CSS</td>
+          <td>Python • C++ • JavaScript • TypeScript • Java • Kotlin • Scala • SQL • HTML • CSS</td>
         </tr>
         <tr>
           <td>
             <strong>Technologies</strong>
           </td>
           <td>
-            React • Express • Node.js • Next.js • MongoDB • Jest • Postman • Git
-            • Bash • Figma
+            React • Spring • Node.js • Git • MongoDB • PostgreSQL • Docker • Kubernetes • Android SDK
           </td>
         </tr>
       </tbody>
