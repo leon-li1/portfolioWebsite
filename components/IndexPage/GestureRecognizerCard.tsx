@@ -10,7 +10,7 @@ export const GestureRecognizerCard = () => (
       <RHS>
       <h4>Java, Android Studio, Gradle</h4>
         <p>
-        Gesture Recognizer is an Androiod app that recognizes a touch gesture and matches it against a collection of previously inputted patterns (e.g. star, circle, mountain, etc.)
+        Gesture Recognizer is an Android app that recognizes a touch gesture and matches it against a collection of previously inputted patterns (e.g. star, circle, mountain, etc.). 
         </p>
         <a href="https://github.com/leon-li1/GestureRecognizer" target="_blank">
           <svg
@@ -46,7 +46,8 @@ const Icon = styled.img`
 const Img = styled.img.attrs({
   src: "/gestureRecognizer.png",
 })`
-  width: 50%;
+  width: 28%;
+  max-height: 18em;
   @media (max-width: ${SMALL}) {
     width: 100%;
   }
