@@ -44,7 +44,7 @@ const Icon = styled.img`
 `;
 
 const Img = styled.img.attrs({
-  src: "/GestureRecognizer.png",
+  src: "/gestureRecognizer.png",
 })`
   width: 50%;
   @media (max-width: ${SMALL}) {
