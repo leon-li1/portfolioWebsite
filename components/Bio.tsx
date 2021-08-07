@@ -17,7 +17,7 @@ export const Bio = () => (
         songs in front of the bathroom mirror (I'm pretty shy though so you
         would rarely catch me doing so). I’m also a mediocre 8-ball pool player.
         Thanks for visiting my website! <br />
-        You can reach me at <a href="mailto:leonli.cc">mail@leonli.cc</a>
+        You can reach me at <a href="mailto:leon.li1@uwaterloo.ca">leon.li1@uwaterloo.ca</a>
       </p>
     </TextContainer>
   </Container>
