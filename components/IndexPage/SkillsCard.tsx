@@ -18,7 +18,7 @@ export const SkillsCard = () => (
             <strong>Technologies</strong>
           </td>
           <td>
-            React • Spring • Node.js • Git • MongoDB • PostgreSQL • Docker • Kubernetes • Android SDK
+            React • Spring • Node.js • Git • MongoDB • PostgreSQL • Angular • Docker • Kubernetes • Android SDK
           </td>
         </tr>
       </tbody>
