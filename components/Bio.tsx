@@ -6,7 +6,7 @@ export const Bio = () => (
     <ProfileImg />
     <TextContainer>
       <h3>
-        I'm a forth year Computer Science student at{" "}
+        I'm a fourth year Computer Science student at{" "}
         <a href="https://i.redd.it/zfjyptgr04651.jpg" target="_blank">
           UWaterloo
         </a>
