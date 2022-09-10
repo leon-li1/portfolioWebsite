@@ -14,7 +14,7 @@ export const CardLayout: FC<CardLayoutProps> = ({ children, footer }) => {
   const floatingDiv = useRef<HTMLDivElement>(null);
 
   usePageResize(() => {
-    console.log("resize");
+    // console.log("resize");
     const newHeight = floatingDiv.current?.getBoundingClientRect()?.height;
     setHeight(newHeight ? `${newHeight}px` : "200vh");
   });
