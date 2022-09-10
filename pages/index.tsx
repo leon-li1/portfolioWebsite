@@ -14,7 +14,7 @@ const footerContent = () => (
   <>
     <span>Perth, Australia</span>
     <AirplaneSVG />
-    <span>Markham, ON</span>
+    <span>East Gwillimbury, ON</span>
   </>
 );
 
